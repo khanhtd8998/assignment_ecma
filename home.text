@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <!-- <header class="tw-grid tw-grid-cols-3 tw-items-center tw-justify-evenly">
+    <!-- <div id="app"></div> -->
+    <header class="tw-grid tw-grid-cols-3 tw-items-center tw-justify-evenly">
       <div class="d-flex justify-content-end">
         <img
           class="tw-w-[110px] tw-h-[90px] tw-me-48"
@@ -287,7 +287,7 @@
         <p>Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</p>
         <p>© 2022 - Bản quyền của Công ty TNHH Ti Ki</p>
       </div>
-    </footer> -->
+    </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

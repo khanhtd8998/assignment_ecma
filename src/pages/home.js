@@ -1,8 +1,12 @@
 import Header from "../components/header"
 import Footer from "../components/footer";
-const Home = function () { 
-    return`
+import BoxLeft from "../components/boxleft";
+import BoxRight from "../components/boxright";
+const Home = function () {
+    return `
     ${Header()}
+    ${BoxLeft()}
+    ${BoxRight()}
     ${Footer()}
     `
 }
