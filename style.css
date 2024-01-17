@@ -73,10 +73,11 @@ main{
 footer{
     max-width: 1440px;
     margin: 0 auto;
-    /* background-color: #FF424E; */
     margin-top: 150px;
-    height: 1000px;
 }
 .footer-link{
     margin: 5px 0px;
+}
+.block-info{
+    border-top: 1px solid #ccc;
 }
