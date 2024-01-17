@@ -33,6 +33,7 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .boxleft{
     min-width: 20%;
     padding: 0px 30px;
@@ -68,4 +69,14 @@ main{
     border-radius: 5px;
     padding: 0 5px;
     background-color: #ffcccc;
+}
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background-color: #FF424E; */
+    margin-top: 150px;
+    height: 1000px;
+}
+.footer-link{
+    margin: 5px 0px;
 }
