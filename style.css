@@ -26,7 +26,7 @@ body a{
     color: white;
 }
 header{
-    border-bottom: 50px solid #f5f6fa;
+    border-bottom: 40px solid #f5f6fa;
 }
 main{
     display: flex;
@@ -36,7 +36,7 @@ main{
 .boxleft{
     min-width: 20%;
     padding: 0px 30px;
-    height: 150px;
+    height: 165px;
     margin-right: 20px;
     border-bottom: 1px solid #ccc;
 
@@ -44,11 +44,17 @@ main{
 .boxright{
     min-width: 80%;
 }
-.nav-content{
-    box-sizing: border-box;
+.main-content{
+    min-height: 60px;
     border-bottom: 1px solid #ccc;
 }
+.nav-content{
+    box-sizing: border-box;
+    position: absolute;
+}
+
 .nav-content a{
+    box-sizing: border-box;
     color: black;
     margin: 0 10px;
     padding-bottom: 20px;
@@ -56,4 +62,10 @@ main{
 .nav-content a:hover{
     color: blue;
     border-bottom: 4px solid blue;
+}
+.discount{
+    border: 2px solid #FF424E;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: #ffcccc;
 }
