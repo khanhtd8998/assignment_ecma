@@ -17,9 +17,6 @@ const BoxRight = function () {
       ${Product()}
       ${Product()}
       ${Product()}
-      ${Product()}
-      ${Product()}
-
     </div>
   </div>
   </div>

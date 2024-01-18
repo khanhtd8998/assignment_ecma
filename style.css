@@ -26,9 +26,10 @@ body a{
     color: white;
 }
 header{
-    border-bottom: 50px solid #f5f6fa;
+    border-bottom: 40px solid #f5f6fa;
 }
 main{
+    /* display: flex; */
     max-width: 1440px;
     margin: 0 auto;
 }
