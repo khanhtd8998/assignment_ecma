@@ -1,6 +1,6 @@
 const BoxLeft = function () {
     return`
-    
+    <div class="d-flex">
       <div class="boxleft text-start">
         <p class="tw-font-medium">DANH MỤC SẢN PHẨM</p>
         <ul class="p-0">

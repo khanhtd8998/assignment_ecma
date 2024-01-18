@@ -16,7 +16,7 @@
       <div class="d-flex justify-content-end">
         <img
           class="tw-w-[110px] tw-h-[90px] tw-me-48"
-          src="./public/imgs/logo-tiki.png"
+          src="./public/imgs/tikilogo.png"
         />
       </div>
 
@@ -58,72 +58,80 @@
       </div>
     </header>
     <main class="mt-4">
-      <div class="boxleft text-start">
-        <p class="tw-font-medium">DANH MỤC SẢN PHẨM</p>
-        <ul class="p-0">
-          <li class="tw-my-2">
-            <a class="tw-appearance-none" href="">English Boook</a>
-          </li>
-          <li class="tw-my-2">
-            <a class="tw-appearance-none" href="">Sách tiếng Viết</a>
-          </li>
-          <li class="tw-my-2">
-            <a class="tw-appearance-none" href="">Văn phòng phẩm</a>
-          </li>
-          <li class="tw-my-2">
-            <a class="tw-appearance-none" href="">Quà lưu niệm</a>
-          </li>
-        </ul>
-      </div>
-      <div class="boxright">
-        <h2 class="mb-4 fw-thin">Nhà Sách Tiki</h2>
-        <div class="banner">
-          <img
-            class="tw-w-full tw-max-h-[400px]"
-            src="https://cdn.chanhtuoi.com/uploads/21/09/img-18092021-183717-800-x-400-pixel-3.png"
-            alt=""
-          />
+      <div class="d-flex">
+        <div class="boxleft text-start">
+          <p class="tw-font-medium">DANH MỤC SẢN PHẨM</p>
+          <ul class="p-0">
+            <li class="tw-my-2">
+              <a class="tw-appearance-none" href="">English Boook</a>
+            </li>
+            <li class="tw-my-2">
+              <a class="tw-appearance-none" href="">Sách tiếng Viết</a>
+            </li>
+            <li class="tw-my-2">
+              <a class="tw-appearance-none" href="">Văn phòng phẩm</a>
+            </li>
+            <li class="tw-my-2">
+              <a class="tw-appearance-none" href="">Quà lưu niệm</a>
+            </li>
+          </ul>
         </div>
-        <div class="main-content mt-3 tw-mb-[100px]">
-          <nav class="nav nav-content">
-            <a class="nav-link fs-5" href="#">Phổ biến</a>
-            <a class="nav-link fs-5" href="#">Bán chạy</a>
-            <a class="nav-link fs-5" href="#">Hàng mới</a>
-            <a class="nav-link fs-5" href="#">Giá thấp</a>
-            <a class="nav-link fs-5" href="#">Giá cao</a>
-          </nav>
-        </div>
-        <div
-          class="list-product tw-grid tw-grid-cols-4 tw-gap-[100px] tw-mt-[50px] tw-px-[20px]"
-        >
-          <div class="product tw-max-w-[250px]">
+        <div class="boxright">
+          <h2 class="mb-4 fw-thin">Nhà Sách Tiki</h2>
+          <div class="banner">
             <img
-              class="tw-w-full"
-              src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
+              class="tw-w-full tw-max-h-[400px]"
+              src="https://cdn.chanhtuoi.com/uploads/21/09/img-18092021-183717-800-x-400-pixel-3.png"
               alt=""
             />
-            <div
-              class="name-product tw-w-full tw-text-start tw-h-[50px] tw-mt-5"
-            >
-              <p class="tw-text-xl tw-m-0 tw-p-0">
-                Chó sủa nhầm cây, tại sao những gì ta biết về thành
-              </p>
+          </div>
+          <div class="main-content mt-3 tw-mb-[100px]">
+            <nav class="nav nav-content">
+              <a class="nav-link fs-5" href="#">Phổ biến</a>
+              <a class="nav-link fs-5" href="#">Bán chạy</a>
+              <a class="nav-link fs-5" href="#">Hàng mới</a>
+              <a class="nav-link fs-5" href="#">Giá thấp</a>
+              <a class="nav-link fs-5" href="#">Giá cao</a>
+            </nav>
+          </div>
+          <div
+            class="list-product tw-grid tw-grid-cols-4 tw-gap-[100px] row-gap-xxl-5 tw-mt-[50px] tw-px-[20px]"
+          >
+            <div class="product tw-w-[200px]">
+              <img
+                class="tw-w-full"
+                src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
+                alt=""
+              />
+              <div
+                class="name-product tw-w-full tw-text-start tw-h-[50px] tw-mt-5"
+              >
+                <p class="tw-text-xl tw-m-0 tw-p-0">
+                  Chó sủa nhầm cây, tại sao những gì ta biết về thành
+                </p>
+              </div>
+              <div class="rating tw-mt-10">
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <i class="fa-solid fa-star fa-xs"></i>
+                <span class="tw-text-gray-500">|</span>
+                <span class="tw-text-gray-500">Đã bán 1000+</span>
+              </div>
+              <div class="price d-flex align-items-center gap-lg-3">
+                <p class="tw-text-xl tw-text-[#FF424E] tw-font-medium tw-p-0">
+                  112.500 ₫
+                </p>
+                <p class="discount tw-text-4px tw-text-[#FF424E]">-25%</p>
+              </div>
             </div>
-            <div class="rating tw-mt-10">
-              <i class="fa-solid fa-star fa-xs"></i>
-              <i class="fa-solid fa-star fa-xs"></i>
-              <i class="fa-solid fa-star fa-xs"></i>
-              <i class="fa-solid fa-star fa-xs"></i>
-              <i class="fa-solid fa-star fa-xs"></i>
-              <span class="tw-text-gray-500">|</span>
-              <span class="tw-text-gray-500">Đã bán 1000+</span>
-            </div>
-            <div class="price d-flex align-items-center gap-lg-3">
-              <p class="tw-text-xl tw-text-[#FF424E] tw-font-medium tw-p-0">
-                112.500 ₫
-              </p>
-              <p class="discount tw-text-4px tw-text-[#FF424E]">-25%</p>
-            </div>
+            
+
+            
+
+            
+            
           </div>
         </div>
       </div>

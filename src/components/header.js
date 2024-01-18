@@ -12,7 +12,7 @@ const Header = function () {
     <input type="text" class="tw-w-96 tw-p-1 searchTerm" />
     <button
       type="submit"
-      class="searchButton tw-bg-sky-600 hover:tw-bg-blue-500 tw-transition-colors tw-py-1 tw-text-white px-3"
+      class="searchButton tw-bg-[#0D5Cb6] hover:tw-bg-blue-500 tw-transition-colors tw-py-1 tw-text-white px-3"
     >
       <i class="fa fa-search me-2"></i>
       Tìm Kiếm

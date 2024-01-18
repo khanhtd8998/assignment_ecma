@@ -1,6 +1,6 @@
 const Product = function () {
     return`
-    <div class="product tw-max-w-[250px]">
+    <div class="product tw-w-[200px]">
     <img
       class="tw-w-full"
       src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
@@ -29,6 +29,7 @@ const Product = function () {
       <p class="discount tw-text-4px tw-text-[#FF424E]">-25%</p>
     </div>
   </div>
+  
     `
 };
 export default Product;

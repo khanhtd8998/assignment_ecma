@@ -12,8 +12,14 @@ const BoxRight = function () {
       />
     </div>
     ${BoxRightNav()}
-    <div class="list-product tw-grid tw-grid-cols-4 tw-gap-[100px] tw-mt-[50px] tw-px-[20px]">
+    <div class="list-product tw-grid tw-grid-cols-4 tw-gap-[100px] row-gap-xxl-5 tw-mt-[50px] tw-px-[20px]">
       ${Product()}
+      ${Product()}
+      ${Product()}
+      ${Product()}
+      ${Product()}
+      ${Product()}
+
     </div>
   </div>
   </div>
