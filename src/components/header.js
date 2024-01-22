@@ -2,11 +2,12 @@ const Header = function () {
   return`
   <header class="tw-grid tw-grid-cols-3 tw-items-center tw-justify-evenly">
   <div class="d-flex justify-content-end">
+    <a href="/">
     <img
       class="tw-w-[110px] tw-h-[90px] tw-me-48"
-      src="./public/imgs/tikilogo.png"
+      src="/imgs/tikilogo.png"
     />
-  </div>
+  </div></a>
 
   <div class="search tw-w-96">
     <input type="text" class="tw-w-96 tw-p-1 searchTerm" />
