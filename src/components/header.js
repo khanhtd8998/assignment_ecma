@@ -42,7 +42,7 @@ const Header = function () {
         class="fa-solid fa-cart-shopping fa-flip fa-2xl"
         style="color: #ffffff"
       ></i>
-      <a href="./ctsp">Giỏ hàng</a>
+      <a href="">Giỏ hàng</a>
     </div>
   </div>
 </header>

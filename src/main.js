@@ -11,8 +11,9 @@ import ChiTietSp from "./pages/ctsp";
 router.on('/', function () {
   render("#app", Home)
 });
-router.on('/ctsp', function () {
-  render("#app", ChiTietSp)
+router.on('/ctsp/:id', function ({data}) {
+  render("#app", () => ChiTietSp(data))
+  
 });
 
 router.resolve();

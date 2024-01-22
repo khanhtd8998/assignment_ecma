@@ -1,41 +1,26 @@
-const ProductImages = function() {
-    return`
+const ProductImages = function (book) {
+  return/*html*/`
     <div
     class="d-flex justify-content-center tw-w-[400px] tw-py-[20px] border"
   >
     <img
-      class="tw-w-[300px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
+      id="largeImage"
+      class="tw-w-[30rem] tw-h-[26rem]"
+      src="${book.images[0].base_url}"
       alt=""
     />
   </div>
-  <div class="d-flex justify-content-between my-3">
-    <img
-      class="tw-w-[60px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
+  <div id="thumbnailContainer" class="d-flex justify-content-center gap-xl-4 my-3">
+  ${book.images.map(function (img){
+    return `
+          <img
+      class="thumbnail tw-w-[4rem] tw-h-[6rem] "
+      src="${img.small_url}"
       alt=""
     />
-    <img
-      class="tw-w-[60px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
-      alt=""
-    />
-    <img
-      class="tw-w-[60px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
-      alt=""
-    />
-    <img
-      class="tw-w-[60px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
-      alt=""
-    />
-    <img
-      class="tw-w-[60px]"
-      src="https://cafefcdn.com/2017/photo-0-1501496971284.jpg"
-      alt=""
-    />
-  </div>
     `
+  }).join('')}
+  </div>
+    `;
 }
 export default ProductImages
