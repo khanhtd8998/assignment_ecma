@@ -5,3 +5,4 @@ const render = (container, component) => {
 const router = new Navigo('/', { linksSelector: 'a'});
 
 export { render, router}
+

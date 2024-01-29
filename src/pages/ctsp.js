@@ -1,17 +1,14 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
 import ProductImages from "../components/product_images";
 import ProductPrice from "../components/product_price";
 import ProductDescribe from "../components/product_describe";
 import Product from "../components/product";
 import data from "../../db.json" assert {type: 'json'}
 
-const ChiTietSp = function ({id}) {
+const ChiTietSp = function (id) {
   const book = data.books.find(book => book.id === +id);
   // console.log(book);
   if (!book) return null;
   return `
-    ${Header()}
     <div
     class="d-flex tw-gap-[100px] justify-content-center product-info tw-mx-auto"
   >
@@ -35,7 +32,6 @@ const ChiTietSp = function ({id}) {
       <button class="my-3 btn btn-outline-primary tw-min-h-[50px] tw-min-w-[300px] tw-rounded-2">Xem Thêm Nội Dung</button>
     </div>
   </div>
-    ${Footer()}
     `
 }
 
