@@ -1,9 +1,18 @@
+import { useEffect, useState } from "../ultilities";
 import SideBar from "../components/sidebar";
 import Banner from "../components/banner";
 import Product from "../components/product";
-import data from "../../db.json" assert {type: 'json'}
+// import data from "../../db.json" assert {type: 'json'}
 const Home = function () {
-    return /*html */`
+  const [books, setBooks] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/books")
+      .then((reponsive) => reponsive.json())
+      .then((data) => setBooks(data));
+  }, []);
+  console.log(books);
+
+  return /*html */`
     <div class="d-flex">
         <div class="boxleft text-start">
         ${SideBar()}
@@ -13,9 +22,9 @@ const Home = function () {
           <div
             class="list-product tw-grid tw-grid-cols-4 tw-gap-[50px] tw-mt-[50px] tw-px-[20px]"
           >
-            ${data.books.map(function (book) {
-              return Product(book)
-            }).join("")}
+            ${books.map(function (book) {
+    return Product(book)
+  }).join("")}
           
           </div>
         </div>

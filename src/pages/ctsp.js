@@ -1,11 +1,19 @@
+import { useEffect, useState } from "../ultilities";
 import ProductImages from "../components/product_images";
 import ProductPrice from "../components/product_price";
 import ProductDescribe from "../components/product_describe";
 import Product from "../components/product";
-import data from "../../db.json" assert {type: 'json'}
+// import data from "../../db.json" assert {type: 'json'}
 
 const ChiTietSp = function (id) {
-  const book = data.books.find(book => book.id === +id);
+  const [books, setBooks] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/books")
+      .then((reponsive) => reponsive.json())
+      .then((data) => setBooks(data));
+  }, []);
+  console.log(books);
+  const book = books.find(book => book.id == id);
   // console.log(book);
   if (!book) return null;
   return `
