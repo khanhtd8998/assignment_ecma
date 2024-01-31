@@ -6,14 +6,14 @@ const ProductImages = function (book) {
     <img
       id="largeImage"
       class="tw-w-[30rem] tw-h-[26rem]"
-      src="${book.images[0].base_url}"
+      src="${book.images?.[0].base_url}"
       alt=""
     />
   </div>
   <div id="thumbnailContainer" class="d-flex justify-content-center gap-xl-4 my-3">
-  ${book.images.map(function (img){
+  ${book.images?.map(function (img) {
     return `
-          <img
+      <img
       class="thumbnail tw-w-[4rem] tw-h-[6rem] "
       src="${img.small_url}"
       alt=""

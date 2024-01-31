@@ -4,7 +4,7 @@ const Product = function (book) {
     const stars = Array.from({ length: rating }, (_, index) => index + 1);
     return (stars.length == 0) ? `<i class="fa-solid fa-star fa-xs"></i>` : stars.map(() => '<i class="fa-solid fa-star fa-xs"></i>').join(' ');
   };
-  const formatPrice = (price) => {
+  const formatPrice = (price = "") => {
     return price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
   };
 
@@ -13,7 +13,7 @@ const Product = function (book) {
   <a href="/ctsp/${book.id}">
       <img
         class="tw-w-full tw-h-[12rem]"
-        src="${book.images[0].base_url}"
+        src="${book.images?.[0].base_url}"
         alt=""
       />
   </a>
@@ -22,7 +22,7 @@ const Product = function (book) {
     class="name-product tw-w-full tw-text-start tw-h-[50px] tw-mt-5"
   >
     <p class="tw-text-xl tw-m-0 tw-p-0">
-      <a href="/ctsp/${book.id}">${book.name.substring(0, 50)}</a>
+      <a href="/ctsp/${book.id}">${book.name?.substring(0, 50)}</a>
     </p>
   </div>
   <div class="rating tw-mt-10">
@@ -32,10 +32,10 @@ const Product = function (book) {
   </div>
   <div class="price d-flex align-items-center gap-lg-3">
     <p class="tw-text-xl tw-text-[#FF424E] tw-font-medium tw-p-0">
-      ${formatPrice(book.current_seller.price)}
+      ${formatPrice(book.current_seller?.price)}
     </p>
     <p class="discount tw-text-4px tw-text-[#FF424E]">
-    -${Math.floor((1 - book.current_seller.price / book.original_price) * 100)}%
+    -${Math.floor((1 - book.current_seller?.price / book.original_price) * 100)}%
     </p>
   </div>
 </div>

@@ -6,16 +6,20 @@ import Product from "../components/product";
 // import data from "../../db.json" assert {type: 'json'}
 
 const ChiTietSp = function (id) {
-  const [books, setBooks] = useState([]);
+  const [book, setBook] = useState({});
   useEffect(() => {
-    fetch("http://localhost:3000/books")
+    fetch("http://localhost:3000/books/" + id)
       .then((reponsive) => reponsive.json())
-      .then((data) => setBooks(data));
+      .then((data) => setBook(data));
   }, []);
-  console.log(books);
-  const book = books.find(book => book.id == id);
-  // console.log(book);
-  if (!book) return null;
+  // const [books, setBooks] = useState([]);
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/books")
+  //     .then((reponsive) => reponsive.json())
+  //     .then((data) => setBooks(data));
+  // }, []);
+  // const book = books.find(book => book.id == id);
+  // if (!book) return null;
   return `
     <div
     class="d-flex tw-gap-[100px] justify-content-center product-info tw-mx-auto"
