@@ -34,7 +34,8 @@ const Header = function () {
       <div class="login tw-w-40">
         <a href="">Đăng nhập</a>/
         <a href="">Đăng ký</a>
-        <a href="">Tài khoản</a>
+        <a href="">Tài khoản</a>/
+        <a href="/admin">Quản trị</a>
       </div>
     </div>
     <div class="cart">

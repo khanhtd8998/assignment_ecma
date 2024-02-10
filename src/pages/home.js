@@ -2,7 +2,6 @@ import { useEffect, useState } from "../ultilities";
 import SideBar from "../components/sidebar";
 import Banner from "../components/banner";
 import Product from "../components/product";
-// import data from "../../db.json" assert {type: 'json'}
 const Home = function () {
   const [books, setBooks] = useState([]);
   useEffect(() => {
@@ -11,7 +10,6 @@ const Home = function () {
       .then((data) => setBooks(data));
   }, []);
   console.log(books);
-
   return /*html */`
     <div class="d-flex">
         <div class="boxleft text-start">
