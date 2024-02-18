@@ -8,11 +8,14 @@ import ChiTietSp from "./pages/ctsp";
 import Dashboard from "./pages/dashboard";
 import AddProduct from "./components/admin/add_product";
 import UpdateProduct from "./components/admin/update_product";
-
+import LoginComponent from "./components/login";
 
 
 router.on('/', function () {
   render("#app", () => UserLayout(Home))
+});
+router.on('/login', function () {
+  render("#app", () => LoginComponent())
 });
 router.on('/ctsp/:id', function ({ data }) {
   render("#app", () => UserLayout(() => ChiTietSp(data.id)))
@@ -30,7 +33,5 @@ router.on(
     }
   }
 );
-
-
 
 router.resolve();

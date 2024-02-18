@@ -3,6 +3,8 @@ import ProductImages from "../components/product_images";
 import ProductPrice from "../components/product_price";
 import ProductDescribe from "../components/product_describe";
 import Product from "../components/product";
+import { isEmpty } from 'lodash'
+
 // import data from "../../db.json" assert {type: 'json'}
 
 const ChiTietSp = function (id) {
@@ -12,6 +14,16 @@ const ChiTietSp = function (id) {
       .then((reponsive) => reponsive.json())
       .then((data) => setBook(data));
   }, []);
+  if (isEmpty(book)) {
+    return `
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        `
+  }
+
   // const [books, setBooks] = useState([]);
   // useEffect(() => {
   //   fetch("http://localhost:3000/books")

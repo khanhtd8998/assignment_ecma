@@ -1,6 +1,9 @@
 import { useEffect, useState } from "../ultilities";
 import HeaderAdmin from "../components/admin/header_admin";
 const Dashboard = function () {
+    const formatPrice = (price = "") => {
+        return price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    };
     const [books, setBooks] = useState([]);
     useEffect(() => {
         fetch("http://localhost:3000/books")
@@ -46,8 +49,8 @@ const Dashboard = function () {
                     <tr>
                         <td>${index + 1}</td>
                         <td>${book.name}</td>
-                        <td><img class="tw-w[100px]" src="${book.images[0].base_url}"/></td>
-                        <td>${book.list_price}</td>
+                        <td><img class="tw-w-[100px] tw-h-[100px]" src="${book.images?.[0].base_url}"/></td>
+                        <td>${formatPrice(book.list_price)}</td>
                         <td>${book.short_description}</td>
                         <td>
                             <a href="./admin/update/${book.id}" class="btn btn-warning">SỬA</a>

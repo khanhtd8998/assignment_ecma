@@ -1,5 +1,19 @@
+import { useEffect, useState } from "../ultilities";
+
 const Header = function () {
-  return`
+  const userLogin = localStorage.getItem('user');
+  const isLoggedIn = userLogin ? true : false;
+  console.log(isLoggedIn);
+  // useEffect(() => {
+  //   const logoutBtn = document.querySelector('#logout');
+  //   logoutBtn.addEventListener('click', () => {
+  //     localStorage.removeItem('user');
+  //     window.location.href = "http://localhost:5173/";
+  //     console.log("123123");
+  //   })
+  // },[]);
+
+  return /*html*/ `
   <header class="tw-grid tw-grid-cols-3 tw-items-center tw-justify-evenly">
   <div class="d-flex justify-content-end">
     <a href="/">
@@ -32,10 +46,20 @@ const Header = function () {
         ></i>
       </div>
       <div class="login tw-w-40">
-        <a href="">Đăng nhập</a>/
-        <a href="">Đăng ký</a>
+      ${isLoggedIn
+      ? `
         <a href="">Tài khoản</a>/
         <a href="/admin">Quản trị</a>
+        <button id="logout">Đăng xuất</button>
+
+        `
+      : `
+        <a href="/login">Đăng nhập</a>/
+        <a href="">Đăng ký</a>
+        <a href="">Tài khoản</a>
+
+        `
+    }
       </div>
     </div>
     <div class="cart">

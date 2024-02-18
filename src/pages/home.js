@@ -21,8 +21,8 @@ const Home = function () {
             class="list-product tw-grid tw-grid-cols-4 tw-gap-[50px] tw-mt-[50px] tw-px-[20px]"
           >
             ${books.map(function (book) {
-    return Product(book)
-  }).join("")}
+              return Product(book)
+            }).join("")}
           
           </div>
         </div>

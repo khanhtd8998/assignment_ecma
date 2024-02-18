@@ -44,6 +44,8 @@ const ProductPrice = function (book) {
       </button>
     </div>
     <button class="my-3 tw-min-h-[50px] tw-min-w-[300px] tw-text-white tw-bg-[#FF3945] rounded-2">Chọn mua</button>
+  </div class="py-5 pt-5 border-bottom">
+      <p class="tw-text-xl tw-font-medium">${book.short_description || ""}</p>
   </div>
     `
 }

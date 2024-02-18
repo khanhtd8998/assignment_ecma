@@ -1,7 +1,7 @@
-const ProductDescribe = function(book) {
-    return `
+const ProductDescribe = function (book) {
+  return `
     <p>
-      ${book.description}
+      ${book.description || ""}
     </p>
     `
 }
