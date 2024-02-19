@@ -15,7 +15,7 @@
         "is_leaf": false
       },
       "current_seller": {
-        "price": "50000"
+        "price": "120000"
       },
       "description": "<p>NHỮNG ĐÊM KHÔNG NGỦ NHỮNG NGÀY CHẬM TRÔI - A CRAZY MIND</p>\n<p>“Những đêm không ngủ, những ngày chậm trôi” đại diện cho một hành tinh mới - nơi nỗi đau tinh thần được đưa ra ánh sáng và chữa lành.</p>\n<p>Cuốn sách là tập hợp những câu chuyện có thật của những số phận khác nhau đang gặp phải các vấn đề về tâm lý: trầm cảm, rối loạn lo âu, rối loạn lưỡng cực… và những người đang học tập và làm việc trong ngành tâm lý học.</p>\n<p>“Nếu thế giới này còn thứ gì giữ bạn lại, là tình yêu thương hay sự quan tâm trong phút giây nào đó, mong bạn đừng gạt nó đi, bạn đừng bỏ qua sự cố gắng của bản thân dù nhỏ bé nhất!”- Khải Trạch. Hóa ra tận cùng nỗi đau và tận cùng sự chống chọi là một lòng tha thiết sống, lòng tha thiết bám rễ ở cuộc đời này như thế.</p>\n<p>“Những đêm không ngủ, những ngày chậm trôi” là một khoảng lặng giữa những nốt nhạc vội vã chạy nhảy giữa cuộc sống hiện đại, để những con người dù mang trong mình những tổn thương tâm lý hay không đều cùng ngồi lại bên nhau, soi tỏ tâm hồn nhau bằng ánh sáng của sự thấu cảm, trao gửi cho nhau thương yêu và kết nối để chữa lành.</p>\n<p>Thông qua cuốn sách, A Crazy Mind mong muốn đưa một góc nhìn mới đến độc giả về thế giới của những con người đang phải đấu tranh với những nỗi đau tinh thần cũng như những câu chuyện thực tế ít được đề cập của những người đang học tập và làm việc trong ngành tâm lý học.</p>\n<p>Đây không phải cuốn sách đọc để giải trí, mà là một bức tranh “cảm xúc” được ghép từ những câu chuyện đủ đầy các mảng sáng tối lẩn khuất thẳm sâu trong tâm hồn. Hy vọng đây là một món ăn tinh thần làm đầy thêm sự phong phú trong tâm hồn bạn.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>",
       "images": [
@@ -30,15 +30,15 @@
           "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a8/e9/36/94bb68f3b55bb93a593fec97c087915f.jpg"
         }
       ],
-      "list_price": "100000",
+      "list_price": "150000",
       "name": "Những Đêm Không Ngủ, Những Ngày Chậm Trôi",
-      "original_price": "100000",
+      "original_price": "239000",
       "quantity_sold": {
         "text": "Đã bán 567",
         "value": 567
       },
-      "rating_average": "3",
-      "short_description": "NHỮNG ĐÊM KHÔNG NGỦ NHỮNG NGÀY CHẬM TRÔI - A CRAZY MIND“Những đêm không ngủ, những ngày chậm trôi” đại diện cho một hành tinh mới - nơi nỗi đau tinh thần được đưa ra ánh sáng và chữa lành.Cuốn sách ...",
+      "rating_average": "4",
+      "short_description": "NHỮNG ĐÊM KHÔNG NGỦ NHỮNG NGÀY CHẬM TRÔI - A CRAZY MIND“Những đêm không ngủ, những ngày chậm trôi” đại diện cho một hành tinh mới - nơi nỗi đau tinh thần được đưa ra ánh sáng và chữa lành.",
       "specifications": [
         {
           "name": "Thông tin chung",
@@ -2188,23 +2188,6 @@
         }
       ],
       "id": "31"
-    },
-    {
-      "id": "97c3",
-      "name": "TRAN DUY KHANH 8998 (Tái bản lần 1)",
-      "original_price": "200000",
-      "list_price": "190000",
-      "current_seller": {
-        "price": "167000"
-      },
-      "rating_average": "5",
-      "short_description": "Sản phẩm độc quyền, hay và đắt",
-      "images": [
-        {
-          "base_url": "https://picsum.photos/200/300",
-          "small_url": "https://picsum.photos/200/300"
-        }
-      ]
     }
   ],
   "users": [
@@ -2212,6 +2195,36 @@
       "id": "1",
       "username": "admin",
       "password": "123123"
+    }
+  ],
+  "categories": [
+    {
+      "id": 316,
+      "name": "Sách tiếng Việt"
+    },
+    {
+      "id": 845,
+      "name": "Truyện ngắn - Tản văn - Tạp Văn"
+    },
+    {
+      "id": 842,
+      "name": "Tác phẩm kinh điển"
+    },
+    {
+      "id": 871,
+      "name": "Sách tư duy - Kỹ năng sống"
+    },
+    {
+      "id": 320,
+      "name": "English Books"
+    },
+    {
+      "id": 14896,
+      "name": "Grammar, vocabulary & skills"
+    },
+    {
+      "id": 9,
+      "name": "Fiction - Literature"
     }
   ]
 }

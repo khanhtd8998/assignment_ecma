@@ -9,6 +9,7 @@ import Dashboard from "./pages/dashboard";
 import AddProduct from "./components/admin/add_product";
 import UpdateProduct from "./components/admin/update_product";
 import LoginComponent from "./components/login";
+import BookCategories from "./pages/book_categories";
 
 
 router.on('/', function () {
@@ -19,6 +20,9 @@ router.on('/login', function () {
 });
 router.on('/ctsp/:id', function ({ data }) {
   render("#app", () => UserLayout(() => ChiTietSp(data.id)))
+});
+router.on('/books/cat/:id', function ({ data }) {
+  render("#app", () => UserLayout(() => BookCategories(data.id)))
 });
 router.on(
   {

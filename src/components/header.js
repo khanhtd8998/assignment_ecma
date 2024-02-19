@@ -3,7 +3,7 @@ import { useEffect, useState } from "../ultilities";
 const Header = function () {
   const userLogin = localStorage.getItem('user');
   const isLoggedIn = userLogin ? true : false;
-  console.log(isLoggedIn);
+  // console.log(isLoggedIn);
   // useEffect(() => {
   //   const logoutBtn = document.querySelector('#logout');
   //   logoutBtn.addEventListener('click', () => {

@@ -4,16 +4,23 @@ import Banner from "../components/banner";
 import Product from "../components/product";
 const Home = function () {
   const [books, setBooks] = useState([]);
+  const [categories, setCategories] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:3000/books")
       .then((reponsive) => reponsive.json())
       .then((data) => setBooks(data));
+
+    fetch('http://localhost:3000/categories')
+      .then(res => res.json())
+      .then(data => setCategories(data))
   }, []);
+
   console.log(books);
   return /*html */`
     <div class="d-flex">
         <div class="boxleft text-start">
-        ${SideBar()}
+        ${SideBar(categories)}
         </div>
         <div class="boxright">
             ${Banner()}
@@ -21,8 +28,8 @@ const Home = function () {
             class="list-product tw-grid tw-grid-cols-4 tw-gap-[50px] tw-mt-[50px] tw-px-[20px]"
           >
             ${books.map(function (book) {
-              return Product(book)
-            }).join("")}
+    return Product(book)
+  }).join("")}
           
           </div>
         </div>

@@ -35,15 +35,15 @@ main{
 }
 
 .boxleft{
-    min-width: 20%;
+    min-width: 25%;
     padding: 0px 30px;
-    height: 10.5rem;
+    height: 16.5rem;
     margin-right: 20px;
     border-bottom: 1px solid #ccc;
 
 }
 .boxright{
-    min-width: 80%;
+    min-width: 75%;
 }
 .main-content{
     min-height: 60px;
